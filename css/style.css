@@ -168,7 +168,7 @@
 }
 
 .feedback {
-  padding: 94px 0;
+  padding: 70px 0;
   background: url("../img/feedback/feedback-bg.jpg") no-repeat center right -40%;
 }
 
@@ -189,15 +189,17 @@
 }
 
 .form__input {
+  display: inline-block;
   margin-bottom: 30px;
+}
+
+.form__input:nth-child(2) {
+  width: 270px;
 }
 
 .form__input:first-child {
   margin-right: 30px;
-}
-
-.form__input:last-child {
-  margin: none;
+  width: 270px;
 }
 
 .form__button {
@@ -212,6 +214,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: 31px;
+  line-height: 1.5;
 }
 
 .form__block-text {
@@ -226,19 +229,14 @@
   border-radius: 50%;
   border: 2px solid #cccccc;
   margin-right: 30px;
+  margin-top: 5px;
   background-size: 16px;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../img/feedback/phone.png");
 }
 
-.form__block-subscribe {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.form__block-subscribe p {
+.form__block-tel {
   font-family: 'Museo Sans 700 Bold', sans-serif;
 }
 

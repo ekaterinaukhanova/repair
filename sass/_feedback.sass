@@ -1,5 +1,5 @@
 .feedback
- padding: 94px 0
+ padding: 70px 0
  background: url('../img/feedback/feedback-bg.jpg') no-repeat center right -40%
 .form
  max-width: 575px
@@ -12,11 +12,13 @@
   display: block
   margin-bottom: 50px
  &__input
+  display: inline-block
   margin-bottom: 30px
+  &:nth-child(2)
+   width: 270px   
   &:first-child
    margin-right: 30px
-  &:last-child
-   margin: none   
+   width: 270px  
  &__button
   padding: 28px
   display: block
@@ -25,6 +27,7 @@
  &__block
   display: flex
   margin-top: 31px
+  line-height: 1.5
   &-text
    width: 224px
    margin-right: 78px
@@ -35,11 +38,15 @@
    border-radius: 50%
    border: 2px solid #cccccc
    margin-right: 30px
+   margin-top: 5px
    background-size: 16px
    background-repeat: no-repeat
    background-position: center
    background-image: url('../img/feedback/phone.png')
   &-subscribe
-   align-items: center
-   p
-    +bold
+
+  &-tel
+   +bold
+   
+
+   
