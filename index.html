@@ -19,7 +19,7 @@
                     <a class="header-text__phone" href="tel:+74954225131"><span class="small-xs">+7 (495) 42-251-31</span></a>
                 </div>
                 <div class="header-text__button">
-                    <button class="button"><div class="header-text__button-img"></div><span class="hidden-xs">Перезвоните мне</span></button>
+                    <button class="button" id="button-callback">Перезвоните<span class="hidden-xs"> мне</span></button>
                 </div>
             </div>
         </div>
@@ -57,9 +57,8 @@
                          <!--main-advantages__item-->
                      </div>
                  </div>
-             
-                     <div class="main-image"><img src="img/main/main-img.png" alt="План схема">
-                     </div>
+                <div class="main-image"><img src="img/main/main-img.png" alt="План схема">
+                </div>
               </div>
           </div>    
      </div>
@@ -67,28 +66,105 @@
      <section class="feedback">
          <div class="container">
              <div class="form">
-             <h2 class="form__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
+             <h3 class="form__title">Узнайте точную стоимость
+                ремонта по телефону!
              </h2>
-             <span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
+             <span class="form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
              <form action="#">
                  <input type="text" class="input input-name form__input" placeholder="Ваше имя">
                  <input type="tel" class="input input-tel form__input" placeholder="Ваш телефон">
-                 <button type="submit" class="button form__button">Получить бесплатный дизайн-проект</button>
+                 <button type="submit" class="button form__button">Узнать стоимость</button>
              </form>
              <div class="form__block">
-                 <div class="form__block-text">Наш менеджер перезвонит Вам в течение 60 секунд
-             </div>
-                <div class="form__block-img"></div>
-                <div class="form__block-subscribe">
-                 или перезвоните нам сами
-                 <div class="form__block-tel"><span class="small-xs">+7 (495) 42-251-31</span></div>
-                </div>
-                
-
-
+                  <div class="form__block-subscribe">
+                    Или Вы можете перезвонить нам сами
+                    по телефону:
+                     <div class="form__block-tel"><span class="small-xs">+7 (8182) 42-51-31</span></div>
+                   </div>
              </div>
          </div>
      </section>
+    <div class="modal" id="modal-callback">
+        <div class="modal__dialog">
+          <!--<h4 class="modal__title">Это модальное окно!</h4>-->
+            <div class="modal__close">&#10006;</div>
+             
+                <div class="modal__item">
+                          <div class="modal__item-1">
+                           <div class ="image"> <img src="img/features/1.png" alt="bathroom"></div>
+                            <div class="modal__item-text">
+                               <p class="new"> Ванная комната<br><img src="img/features/line.png"></p>
+                               <div class="modal__item-price"> 135*150 - <span>31 000 руб.</span></div>
+                               <div class="modal__item-price"> 170*170 - <span>43 000 руб.</span></div>
+                            </div><!--/.featers-block-->
+                          </div>
+                          <div class="modal__item-2">
+                           <div class ="image"><img src="img/features/2.png" alt="wc"></div> 
+                            <div class="modal__item-text">
+                               <p class="new"> Туалет<br><img src="img/features/line.png"></p>
+                               <div class="modal__item-price"> 135*70 - <span>14 000 руб.</span></div>
+                            </div><!--/.featers-block-->
+                          </div>
+                          <div class="modal__item-3">
+                           <div class ="image"><img src="img/features/3.png" alt="bathroom"></div>
+                            <div class="modal__item-text">
+                               <p class="new"> Совмещенный санузел<br><img src="img/features/line.png"></p>
+                               <div class="modal__item-price"> 170*210 - <span>54 000 руб.</span></div>
+                            </div><!--/.featers-block-->
+                           </div>
+                           <h4>В стоимость работ входит</h4>
+                           <ul>
+                               <li> Демонтаж старого покрытия стен и пола</li>
+                               <li> Выравнивание стен гипсовыми составами</li>
+                               <li> Грунтовка стен и пола антисептиком, бетоноконтактом</li>
+                               <li> Монтаж кафельной плитки на полу и стенах</li>
+                               <li> Установка реечного или натяжного потолка, светильников</li>
+                               <li> Монтаж двери с коробкой</li>
+                               
+                               
 
+
+                            </ul>
+                </div>
+                     <!--/.container
+                  -->
+
+             
+
+             <div class="form-content">
+                    <h3 class="form-content__title">Узнайте точную стоимость
+                            ремонта по телефону!
+                    </h3>
+                    <a class="form-content__descr">Заполните поля ниже - мы свяжемся с Вами</a>
+                    <form action="#">
+                        <input type="text" class="input input-name form-content__input" placeholder="Ваше имя">
+                        <input type="tel" class="input input-tel form-content__input" placeholder="Ваш телефон">
+                        <button type="submit" class="button form-content__button">Узнать стоимость</button>
+                    </form>
+                    <div class="form-content__subtitle">Или Вы можете перезвонить нам сами
+                                   по телефону:</div>
+                    <div class="form-content__tel">+7 (8182) 42-51-31</div>
+
+
+
+             </div>
+        </div>
+    </div> 
+             <!--================= clearfix ==================-->
+    
+                               
+               
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+     $(document).ready(function (){
+       $('#button-callback').on('click', function(){
+         $('#modal-callback').toggleClass('modal_visible');
+      });
+       $('.modal__close').on('click', function(){
+         $('#modal-callback').toggleClass('modal_visible');
+      });
+    });
+   </script>
 </body>
 </html>

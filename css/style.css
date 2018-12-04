@@ -692,4 +692,194 @@ img {
     width: 20%;
   }
 }
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  left: 0;
+  top: 0;
+  z-index: 99;
+  display: none;
+}
+
+.modal_visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  padding: 5px 200px;
+}
+
+.modal__dialog {
+  width: 1170px;
+  height: 674px;
+  background-color: #fff;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.modal__close:hover {
+  cursor: pointer;
+}
+
+.modal__item {
+  position: absolute;
+  float: left;
+  background-color: #f7f7f7;
+  width: 600px;
+  height: 674px;
+  margin-left: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 80px;
+  padding-right: 0;
+}
+
+.modal__item-1, .modal__item-2, .modal__item-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: none;
+}
+
+.modal__item-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Museo Sans 500 Medium';
+  font-size: 16px;
+  font-weight: 400;
+  text-justify: center;
+}
+
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  size: 120px 85px;
+  margin-right: 29px;
+  margin-bottom: 15px;
+}
+
+.li {
+  content: square;
+  text-indent: -10em;
+  margin-left: -10em;
+}
+
+.li::before {
+  content: square;
+  color: #ffd200;
+}
+
+.form-content {
+  max-width: 670px;
+  display: inline-flexbox;
+  margin-left: 580px;
+  margin-top: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 80px;
+  min-height: 674px;
+  float: right;
+  text-align: 1.5;
+  vertical-align: center;
+}
+
+.form-content__input {
+  display: inline-block;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-content__input:nth-child(2) {
+  width: 370px;
+}
+
+.form-content__input:first-child {
+  margin-right: 30px;
+  margin-top: 52px;
+  width: 370px;
+}
+
+.form-content__button {
+  padding: 28px;
+  display: block;
+  width: 368px;
+  font-size: 16px;
+}
+
+.form-content__title {
+  margin-top: 0;
+  text-align: center;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-bottom: 52px;
+}
+
+.form-content__descr {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin-left: -20px;
+}
+
+.form-content__subtitle {
+  display: block;
+  margin-bottom: 50px;
+  font-family: "Museo Sans 300 Light";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-bottom: 13px;
+  padding-top: 33px;
+  text-align: center;
+}
+
+.form-content__tel {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: -40px;
+  font-family: "Museo Sans 700 Bold";
+  font-size: 24px;
+  font-weight: 400;
+}
 /*# sourceMappingURL=style.css.map */

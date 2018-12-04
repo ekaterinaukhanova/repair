@@ -1,0 +1,127 @@
+.modal
+ position: fixed
+ width: 100%
+ height: 100%
+ background-color: rgba(#000, 0.52)
+ left: 0
+ top: 0
+ z-index: 99
+ display: none
+ &_visible
+  display: flex
+  justify-self: center
+  padding: 5px 200px
+ &__dialog
+  width: 1170px
+  height: 674px
+  background-color: #fff
+  margin: 0
+  display: flex
+  align-items: left
+  position: relative
+  flex-direction: column
+  overflow: hidden
+ &__close
+  position: absolute
+  top: 15px
+  right: 15px
+  &:hover
+   cursor: pointer
+.features
+ 
+.modal__item
+ position: absolute
+ float: left
+ background-color: #f7f7f7
+ width: 600px
+ height: 674px
+ margin-left: 0
+ flex-direction: column
+ box-sizing: border-box 
+ padding: 80px
+ padding-right: 0 
+ &-1, &-2, &-3
+  display: flex
+  flex-direction: row
+  padding-top: none
+ &-text
+  display: flex
+  flex-direction: column
+  font-family: 'Museo Sans 500 Medium'
+  font-size: 16px
+  font-weight: 400
+  text-justify: center
+.image
+ display: flex
+ size: 120px 85px
+ margin-right: 29px
+ margin-bottom: 15px
+.li 
+ content: square /* Скрываем маркеры списка */
+ text-indent: -10em /* Сдвигаем элементы списка влево */
+ margin-left: -10em
+.li::before 
+  content: square /* Добавляем маркер в шестнадцатеричном формате*/
+  color: $primary-color /* Маркеры желтого цвета */
+.form-content 
+ max-width: 670px
+ display: inline-flexbox
+ margin-left: 580px
+ margin-top: none
+ box-sizing: border-box 
+ padding: 80px 
+ min-height: 674px
+ float: right
+ text-align: 1.5
+ vertical-align: center
+ &__input
+  display: inline-block
+  margin-bottom: 30px
+  &:nth-child(2)
+   width: 370px   
+  &:first-child
+   margin-right: 30px
+   margin-top: 52px
+   width: 370px
+  align-items: center
+ &__button
+  padding: 28px
+  display: block
+  width: 368px
+  font-size: 16px
+ &__title
+  margin-top: 0
+  text-align: center
+  padding-right: 50px
+  padding-left: 50px
+  margin-bottom: 52px
+ &__descr
+  justify-content: center
+  text-align: center
+  padding: 20px
+  margin-left: -20px
+ &__subtitle
+  display: block
+  margin-bottom: 50px
+  font-family: "Museo Sans 300 Light"
+  font-size: 15px
+  font-weight: 400
+  line-height: 20px
+  padding-bottom: 13px
+  padding-top: 33px
+  text-align: center
+ &__tel
+  justify-content: center
+  text-align: center
+  margin-left: 10px
+  margin-top: -40px
+  font-family: "Museo Sans 700 Bold"
+  font-size: 24px
+  font-weight: 400
+  
+  
+
+
+ 
+
+ 
