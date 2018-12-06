@@ -224,9 +224,16 @@
 }
 
 .form__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 31px;
   line-height: 1.5;
 }
@@ -597,102 +604,6 @@ template {
   display: none;
 }
 
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: 'Museo Sans Light', sans-serif;
-  color: #333333;
-}
-
-.container {
-  width: 1170px;
-  margin: 0 auto;
-}
-
-img {
-  max-width: 100%;
-}
-
-@media (max-width: 1199px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (max-width: 992px) {
-  .container {
-    width: 767px;
-  }
-  .main-text__title {
-    font-size: 30px;
-    line-height: 36px;
-  }
-  .feedback {
-    background: #fff;
-  }
-}
-
-@media (max-width: 768px) {
-  .hidden-xs {
-    display: none;
-  }
-  .container {
-    width: 95%;
-  }
-  .main-wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .main-text {
-    max-width: 400px;
-    margin: auto;
-  }
-  .main-text__title {
-    text-align: center;
-  }
-  .header-text__button-img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #cccccc;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../img/feedback/phone.png");
-  }
-  .form__block-img {
-    margin-top: 10px;
-    background-size: 16px;
-  }
-}
-
-@media (max-width: 575px) {
-  .container {
-    width: 80%;
-  }
-  .small-xs {
-    font-size: 11px;
-  }
-  .header-text__button-img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid #cccccc;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../img/feedback/phone.png");
-  }
-  .form__block-img {
-    margin-top: 30px;
-    background-size: 16px;
-    width: 20%;
-  }
-}
-
 .modal {
   position: fixed;
   width: 100%;
@@ -714,7 +625,9 @@ img {
 
 .modal__dialog {
   width: 1170px;
+  max-width: 100%;
   height: 674px;
+  max-height: 100%;
   background-color: #fff;
   margin: 0;
   display: -webkit-box;
@@ -739,6 +652,12 @@ img {
 
 .modal__close:hover {
   cursor: pointer;
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .modal__item {
@@ -812,7 +731,7 @@ img {
           box-sizing: border-box;
   padding: 80px;
   min-height: 674px;
-  float: right;
+  float: left;
   text-align: 1.5;
   vertical-align: center;
 }
@@ -881,5 +800,178 @@ img {
   font-family: "Museo Sans 700 Bold";
   font-size: 24px;
   font-weight: 400;
+}
+
+.portfolio {
+  background-color: #f5f5f5;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background: url("../img/rectangle.png") no-repeat center left -18%;
+  background-size: contain;
+  position: relative;
+}
+
+.slider__item {
+  text-align: center;
+}
+
+.slider__item img {
+  margin: auto;
+}
+
+.arrow {
+  width: 45px;
+  height: 19px;
+  position: absolute;
+  bottom: -68px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.arrow_right {
+  left: 50%;
+  background: url("../img/arrow-right.png") no-repeat center;
+  background-size: 100%;
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+}
+
+.arrow_left {
+  left: 50%;
+  -webkit-transform: translateX(-45px);
+          transform: translateX(-45px);
+  margin-left: -15px;
+  background: url("../img/arrow-left.png") no-repeat center;
+  background-size: 100%;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Museo Sans Light', sans-serif;
+  color: #333333;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section-title {
+  font-family: 'Museo Sans 700 Bold', sans-serif;
+  line-height: 45px;
+}
+
+.section-title_center {
+  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+  .slider__item img {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 767px;
+  }
+  .main-text__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .feedback {
+    background: #fff;
+  }
+  .modal_visible {
+    padding: 5px -100px;
+  }
+  .modal__dialog {
+    width: 650px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hidden-xs {
+    display: none;
+  }
+  .container {
+    width: 576px;
+  }
+  .main-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-text {
+    max-width: 400px;
+    margin: auto;
+  }
+  .main-text__title {
+    text-align: center;
+  }
+  .form__block {
+    text-align: left;
+  }
+  .portfolio h2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    width: 320px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .small-xs {
+    font-size: 14px;
+  }
+  .form__block {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    line-height: 1.5;
+  }
+  .form-text {
+    text-justify: right;
+  }
+  .form-img {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form-subscribe {
+    margin: -10px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .portfolio h2 {
+    font-size: 14px;
+    text-justify: middle;
+  }
 }
 /*# sourceMappingURL=style.css.map */

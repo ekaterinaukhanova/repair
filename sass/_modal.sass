@@ -13,7 +13,9 @@
   padding: 5px 200px
  &__dialog
   width: 1170px
+  max-width: 100%
   height: 674px
+  max-height: 100%
   background-color: #fff
   margin: 0
   display: flex
@@ -28,6 +30,9 @@
   &:hover
    cursor: pointer
 .features
+ &__wrap
+ display: flex
+ 
  
 .modal__item
  position: absolute
@@ -61,8 +66,8 @@
  text-indent: -10em /* Сдвигаем элементы списка влево */
  margin-left: -10em
 .li::before 
-  content: square /* Добавляем маркер в шестнадцатеричном формате*/
-  color: $primary-color /* Маркеры желтого цвета */
+ content: square /* Добавляем маркер в шестнадцатеричном формате*/
+ color: $primary-color /* Маркеры желтого цвета */
 .form-content 
  max-width: 670px
  display: inline-flexbox
@@ -71,7 +76,7 @@
  box-sizing: border-box 
  padding: 80px 
  min-height: 674px
- float: right
+ float: left
  text-align: 1.5
  vertical-align: center
  &__input
@@ -118,6 +123,8 @@
   font-family: "Museo Sans 700 Bold"
   font-size: 24px
   font-weight: 400
+
+
   
   
 

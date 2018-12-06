@@ -1,6 +1,10 @@
 @media (max-width: 1199px)
  .container
   width: 970px
+ .slider
+  &__item
+   img
+    max-width: 95%
 @media (max-width: 992px)
  .container
   width: 767px
@@ -11,11 +15,19 @@
     line-height: 36px
  .feedback
   background: #fff
+ .modal
+  &_visible
+   padding: 5px -100px
+  &__dialog
+   width: 650px
+   height: 320px
+ 
+   
 @media (max-width: 768px)
  .hidden-xs
   display: none
  .container
-  width: 95%
+  width: 576px
  .main
   &-wrap
    flex-direction: column
@@ -24,42 +36,37 @@
    margin: auto
    &__title
     text-align: center
- .header
-  &-text
-   &__button
-    &-img
-     width: 40px
-     height: 40px
-     border-radius: 50%
-     border: 2px solid #cccccc
-     background-repeat: no-repeat
-     background-position: center
-     background-image: url('../img/feedback/phone.png')
  .form
   &__block
-   &-img
-    margin-top: 10px
-    background-size: 16px
+   text-align: left
+ .portfolio
+  h2
+   font-size: 14px
+   
    
 @media (max-width: 575px)
  .container
-  width: 80%
+  width: 320px
+  display: flex
+  flex-direction: column
  .small-xs
-  font-size: 11px
- .header
-  &-text
-   &__button
-    &-img
-     width: 40px
-     height: 40px
-     border-radius: 50%
-     border: 2px solid #cccccc
-     background-repeat: no-repeat
-     background-position: center
-     background-image: url('../img/feedback/phone.png')
+  font-size: 14px
  .form
   &__block
-   &-img
-    margin-top: 30px
-    background-size: 16px
-    width: 20%
+   display: inline-flex
+   flex-direction: column
+   line-height: 1.5
+  &-text
+   text-justify: right
+   
+  &-img
+   align-items: center
+  &-subscribe
+   margin: -10px
+   align-content: center
+ .portfolio
+  h2
+   font-size: 14px
+   text-justify: middle
+
+  
